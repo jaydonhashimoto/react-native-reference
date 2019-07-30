@@ -25,6 +25,11 @@ export default class ProfileScreen extends React.Component {
           title="About Modal"
           color="green"
         />
+        <Button
+          onPress={() => navigation.navigate("Gesture")}
+          title="To Gesture Handler"
+          color="orange"
+        />
         <TouchableOpacity onPress={this.props.navigation.openDrawer}>
           <Text>Open Drawer</Text>
         </TouchableOpacity>
