@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
-import { Button } from 'react-native';
+import React, { Fragment } from "react";
+import { Button, TouchableOpacity, Text } from "react-native";
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'Welcome',
+    title: "Welcome",
     headerStyle: {
-      backgroundColor: '#f4511e'
+      backgroundColor: "#f4511e"
     },
-    headerTintColor: '#fff',
+    headerTintColor: "#fff",
     headerTitleStyle: {
-      fontWeight: 'bold'
+      fontWeight: "bold"
     }
   };
   render() {
@@ -18,13 +18,16 @@ export default class HomeScreen extends React.Component {
       <Fragment>
         <Button
           title="Go to Jane's profile"
-          onPress={() => navigate('Profile', { name: 'Jane', age: '23' })}
+          onPress={() => navigate("Profile", { name: "Jane", age: "23" })}
         />
         <Button
-          onPress={() => navigate('Modal1')}
+          onPress={() => navigate("Modal1")}
           title="Info Modal"
           color="#333"
         />
+        <TouchableOpacity onPress={this.props.navigation.openDrawer}>
+          <Text>Open Drawer</Text>
+        </TouchableOpacity>
       </Fragment>
     );
   }
