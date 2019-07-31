@@ -10,12 +10,12 @@ import ProfileScreen from "./components/pages/ProfileScreen";
 import ModalScreen1 from "./components/ModalScreen1";
 import ModalScreen2 from "./components/ModalScreen2";
 import SettingsScreen from "./components/pages/SettingsScreen";
-import GestureScreen from "./components/pages/GestureScreen";
+import ElementsScreen from "./components/pages/ElementsScreen";
 
 const MainStack = createStackNavigator({
   Home: { screen: HomeScreen },
   Profile: { screen: ProfileScreen },
-  Gesture: { screen: GestureScreen }
+  Elements: { screen: ElementsScreen }
 });
 
 const SettingsStack = createStackNavigator({

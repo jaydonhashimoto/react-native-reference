@@ -26,8 +26,8 @@ export default class ProfileScreen extends React.Component {
           color="green"
         />
         <Button
-          onPress={() => navigation.navigate("Gesture")}
-          title="To Gesture Handler"
+          onPress={() => navigation.navigate("Elements")}
+          title="To React Native Elements"
           color="orange"
         />
         <TouchableOpacity onPress={this.props.navigation.openDrawer}>
